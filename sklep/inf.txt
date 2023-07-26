@@ -1,0 +1,2 @@
+nie  dodałam usuwania w kliencie i produktach poniewaz sa powiazane z zamowieniami
+a w sql lite nie dziala usuwanie kaskadowe wraz z hibernate

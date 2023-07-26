@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="531.0" prefWidth="1120.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sklep.controlers.TabKlienci">
+    <children>
+            <VBox layoutX="26.0" layoutY="34.0">
+                <children>
+                    <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="20.0">
+                        <children>
+                            <VBox spacing="20.0">
+                                <children>
+                                    <Label text="Imie klienta">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+
+                                    <Label text="Nazwisko klienta">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="Kod pocztowy">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+
+                                    <Label text="telefon">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="email">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="ulica">
+                                        <font>
+                                            <Font size="16.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </VBox>
+                            <VBox spacing="20.0">
+                                <children>
+                                    <TextField fx:id="kImieFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                    <TextField fx:id="kNazwiskoFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                    <TextField fx:id="kKodFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                    <TextField fx:id="kTelefonFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                    <TextField fx:id="kEmailFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                    <TextField fx:id="kUlicaFx" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" />
+                                </children>
+                            </VBox>
+                        </children>
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                        </padding>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="11.0" prefWidth="318.0">
+                        <children>
+                            <Text fx:id="kError" fill="GREEN" strokeType="OUTSIDE" strokeWidth="0.0" text="Pola nie sa uzupelnione" visible="false">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Text>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" layoutX="10.0" layoutY="350.0" prefHeight="100.0" prefWidth="200.0">
+                        <children>
+                            <Button alignment="CENTER" mnemonicParsing="false" text="Dodaj klienta" onAction="#submitKlient" textAlignment="CENTER">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+            <VBox layoutX="410.0" layoutY="34.0" maxWidth="1.7976931348623157E308" prefHeight="457.0" prefWidth="644.0">
+                <children>
+                    <HBox prefHeight="0.0" prefWidth="981.0" />
+                    <TableView fx:id="kTableFx" maxWidth="Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="419.0" prefWidth="1065.0">
+                        <columns>
+                            <TableColumn fx:id="kImieKolFx" maxWidth="Infinity" minWidth="100.0" prefWidth="119.0" text="Imie" />
+                            <TableColumn fx:id="kNazwiskoKolFx" maxWidth="Infinity" minWidth="23.0" prefWidth="116.0" text="Nazwisko" />
+                            <TableColumn fx:id="kKodKolFx" maxWidth="Infinity" minWidth="23.0" prefWidth="75.0" text="Kod" />
+                            <TableColumn fx:id="kUlicaKolFx" maxWidth="Infinity" minWidth="0.0" prefWidth="99.0" text="ulica" />
+                            <TableColumn fx:id="kTelefonKolFx" maxWidth="Infinity" minWidth="15.0" prefWidth="96.0" text="Telefon" />
+                            <TableColumn fx:id="kEmailKolFx" maxWidth="344.0" minWidth="23.0" prefWidth="138.0" text="Email" />
+                        </columns>
+                    </TableView>
+                </children>
+            </VBox>
+        </children>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+
+
+</AnchorPane>
